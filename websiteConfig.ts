@@ -10,7 +10,7 @@ export const websiteConfig = {
   gtm: 'GTM-PTZ55Z7C',
   colors: {
     main: '#406df6',
-    secondary: '',
+    secondary: '#F1F4F9',
     text: '',
   },
 };

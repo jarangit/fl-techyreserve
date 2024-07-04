@@ -37,24 +37,22 @@ const data = [
 ];
 const FAQ = (props: Props) => {
   return (
-    <Column className="bg-main !py-24 gap-12">
-      <Column className="items-center gap-6">
-        <div >
-          HAVE ANY QUESTIONS?
+    <div>
+      <Column gap={24} className="my-container !py-24">
+        <div className="text-center font-medium text-xl text-main">FAQ</div>
+        <div className="text-5xl font-medium text-center max-w-[700px] mx-auto">
+          Have A Question? We Have The Answer!{" "}
         </div>
-        <div className="text-3xl font-bold text-center">
-          Frequently Asked Questions
-        </div>
-      </Column>
 
-      <Column className="my-container gap-6">
-        {data.map((item, key) => (
-          <div key={key}>
-            <AccordionItem data={item} />
-          </div>
-        ))}
+        <Column className=" gap-6">
+          {data.map((item, key) => (
+            <div key={key}>
+              <AccordionItem data={item} />
+            </div>
+          ))}
+        </Column>
       </Column>
-    </Column>
+    </div>
   );
 };
 

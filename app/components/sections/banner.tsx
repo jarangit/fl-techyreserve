@@ -16,7 +16,7 @@ const list = [
 
 const Banner = (props: Props) => {
   return (
-    <div className='bg-[#F1F4F9]'>
+    <div className='bg-secondary'>
       <div className='my-container grid grid-cols-1 md:grid-cols-2 !py-10 relative'>
         <Column gap={6}>
           <div className='text-5xl font-medium'>Get Your Personal Loan Up To $5000</div>

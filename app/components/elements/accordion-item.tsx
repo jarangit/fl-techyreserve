@@ -20,7 +20,7 @@ const AccordionItem = ({ data, firstActive }: Props) => {
     >
       <Row className="flex justify-between ">
         <div className="text-xl font-bold">{data.title}</div>
-        <div className="bg-secondary p-2 rounded-md">
+        <div className=" p-2 rounded-md">
           {open ? <IoIosArrowDown size={25} /> : <IoIosArrowUp size={25} />}
         </div>
       </Row>

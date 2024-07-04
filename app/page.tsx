@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import Advantages from "./components/sections/advantages";
 import HowItWork from "./components/sections/how-it-work";
+import What from "./components/sections/what";
 
 export default function Home() {
   const reload = () => {
@@ -24,10 +25,11 @@ export default function Home() {
       <Banner />
       <Advantages />
       <HowItWork />
+      <Why />
+      <What />
+      <FAQ /> 
       {/* <GetYourLoan /> */}
-      {/* <Why /> */}
       {/* <Price /> */}
-      {/* <FAQ />  */}
     </div>
   );
 }
