@@ -40,7 +40,7 @@ const FAQ = (props: Props) => {
     <div>
       <Column gap={24} className="my-container !py-24">
         <div className="text-center font-medium text-xl text-main">FAQ</div>
-        <div className="text-5xl font-medium text-center max-w-[700px] mx-auto">
+        <div className=" text-xl lg:text-5xl font-medium text-center max-w-[700px] mx-auto">
           Have A Question? We Have The Answer!{" "}
         </div>
 

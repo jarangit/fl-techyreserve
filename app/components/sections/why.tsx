@@ -27,7 +27,7 @@ const Why = (props: Props) => {
         {/* g1 */}
         <Column gap={12} className="">
           <div className="text-main font-medium text-lg">WHY US</div>
-          <div className="text-5xl font-medium">
+          <div className=" text-xl lg:text-5xl font-medium">
             Fast. Reliable. Transparent.
           </div>
           <div className="text-xl font-medium">

@@ -13,9 +13,9 @@ const Advantages = (props: Props) => {
       <div className="my-container">
         <Column className="gap-16">
           <div className="text-center font-medium text-2xl text-main">ADVANTAGES</div>
-          <div className="text-5xl font-medium text-center">Have No Time To Waste? Choose Us!</div>
+          <div className=" text-xl lg:text-5xl font-medium text-center">Have No Time To Waste? Choose Us!</div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-24">
-            <Column gap={12}>
+            <Column gap={12} className="justify-center items-center">
               <div>
                 <TbNotes className="text-7xl text-main" />
               </div>
@@ -26,7 +26,7 @@ const Advantages = (props: Props) => {
                 computer, tablet, or mobile phone.`}
               </div>
             </Column>
-            <Column gap={12}>
+            <Column gap={12} className="justify-center items-center">
               <div>
                 <FaSackDollar className="text-7xl text-main" />
               </div>
@@ -36,7 +36,7 @@ const Advantages = (props: Props) => {
       We focus on helping you and providing you with loan offers! So don’t let your credit determine your future and stop you from submitting a request with us!
     `}</div>
             </Column>
-            <Column gap={12}>
+            <Column gap={12} className="justify-center items-center">
               <div>
                 <AiFillThunderbolt className="text-7xl text-main" />
               </div>
@@ -48,7 +48,7 @@ const Advantages = (props: Props) => {
     `}
               </div>
             </Column>
-            <Column gap={12}>
+            <Column gap={12} className="justify-center items-center">
               <div>
                 <GrSecure className="text-7xl text-main" />
               </div>

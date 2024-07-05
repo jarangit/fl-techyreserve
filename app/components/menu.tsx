@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useRouter } from "next/dist/client/components/navigation";
 import Link from "next/link";
 import { BsFillCreditCard2FrontFill } from "react-icons/bs";
+import { websiteConfig } from "@/websiteConfig";
 
 type Props = {};
 
@@ -36,8 +37,11 @@ const Menus = (props: Props) => {
         className="   my-container items-center w-full justify-between
      !py-4 "
       >
+        <Row>
+          <BsFillCreditCard2FrontFill className=" text-xl lg:text-5xl text-main" />
+          <div className="text-2xl">{websiteConfig.title1}</div>
+        </Row>
         <Row gap={3} className="gap-8 hidden md:flex">
-          <BsFillCreditCard2FrontFill className="text-5xl text-main" />
           {menus.map((item, key) => (
             <Link
               href={item.url}
@@ -52,7 +56,7 @@ const Menus = (props: Props) => {
           <a href="/form-loan">
             <button
               onClick={() => push("/form-loan")}
-              className="bg-main text-white p-2 px-4 rounded-md font-medium"
+              className="bg-main text-white p-2 px-4 rounded-md font-medium hidden lg:block"
             >
               Get Started
             </button>
