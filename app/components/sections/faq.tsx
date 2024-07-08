@@ -7,47 +7,54 @@ type Props = {};
 
 const data = [
   {
-    title: "What is a short term loan?",
-    content: `Short term loans are designed around addressing an immediate financial need or emergency. This could be an unexpected medical bill, a broken down car or an urgent boiler repair, etc. The loan amount range is usually up to $1,000 and the term can range from under 30 days for a payday style loan to monthly or weekly installments for an installment style loan`,
+    title: "Annual Percentage Rate (APR)",
+    content: `Here at Techyreserve we offer APR rates ranging from 4.95% minimum to 35.95% maximum. The APR you may be offered depends on different factors, including your personal situation and financial standing. By completing our loan offer form you shall receive details of the APR and full terms of any loan offered to you.
+The actual interest rate you may be offered depends on several factors: your credit score, financial history, income, etc. Contact your lender for more information about the APR you may receive and the terms of your loan agreement.`,
   },
   {
-    title: `How does ${websiteConfig.domain} work?`,
-    content: `We provide an online marketplace connecting borrowers with trusted lenders to support Americans in need. Our website makes the process of finding a lender to meet your needs faster and easier! Avoid wasting hours of your time applying individually on several websites, and simply apply by submitting your information to our vast network of lenders through one easy application`,
+    title: `Loan Term (Repayment Period)`,
+    content: `<table class="border"><tbody><tr ><td class="p-3 border">Minimum</td><td class="p-3 border">Maximum</td></tr><tr><td class="p-3 border">90 days</td><td class="p-3 border">84 months</td></tr></tbody></table>`,
   },
   {
-    title: `Will ${websiteConfig.domain} charge me for using its service?`,
-    content: `There is no cost to fill out a form and submit your information through our website. As a marketplace, we simply connect you to a prospective lender and receive a commission. We do not receive any information that allows us to evaluate or compare offers from potential lenders. Please carefully review any offer you receive from a lender to make sure it meets your needs and you fully understand the terms before proceeding to take out a loan.`,
+    title: `Representative Example of APR`,
+    content: `If you borrow $2,500 over a term of 1 year with an APR of 10% and a fee of 3%, you will pay $219,79 each month. The total amount payable will be $2,637, with a total interest of $137,48.`,
   },
   {
-    title: `Can I get a loan with poor credit?`,
+    title: `Financial Implications (Interest & Finance Charges)`,
     content: `
-    <div>Qualifying with a short-term lender can be easy and they are used to working with people in many different situations. Here are the basic qualifications: Currently employed or receiving regular income:</div>
-    <ul class="font-weight--300">
-<li>Make at least $800 per month</li>
-<li>18 years of age or older and a U.S. resident</li>
-<li>Have an active checking account</li>
-<li>Other requirements may apply based on the individual lender</li>
-</ul>
+   Techyreserve is not a lender and we cannot predict what fees and interest rate will be applied to the loan you will be offered. It is your lender that will provide all the necessary information about the cost of the loan. It is your responsibility to peruse the loan agreement carefully and accept the offer only if you agree to all the terms. Techyreserve service is free of charge, and you are under no obligation to accept the terms that the lender offers you.>
     `,
   },
   {
-    title: `How quickly will the funds be deposited?`,
-    content: `If a lender offers you a loan with terms and you accept straight away, it is possible to get the money deposited into your account within a business day. It can take up to a few days if you are accepting a loan offer on a weekend, holiday, or any other non-business day. It may affect how long it will take for you to get your money; in these cases, it may take a bit longer.`,
+    title: `Implications of Non-Payment`,
+    content: `When you accept the terms and conditions for a loan, you enter into a commitment to repay the amount you owe according to the specific schedule outlined in the documents. In the event of non-payment, additional charges may be applied. Late payment penalties vary by lender, and as Techyreserve is not involved in the lending process, we cannot supply any information on the fees you will incur if any default occurs. For more information, please contact the lender directly if you have any issues relating to your loan repayment.`,
+  },
+  {
+    title: `Potential Impact on Credit Score`,
+    content: `Techyreserve is not a lender and we do not check your credit standing and credit capacity. When you submit a request at our online platform, this is considered a soft inquiry and does not impact your credit score. However, some lenders may carry out a credit check to ascertain your eligibility for a loan. Most likely they will turn to any of the three major credit bureaus (Transunion, Experian, and Equifax) that is in most cases considered a hard inquiry and may affect your credit score.`
+  },
+  {
+    title: `Collection Practices`,
+    content: `Techyreserve is not a lender. As such, we are not involved in any debt collection practices and cannot make you aware of any of them. Your lender will specify their collection practices in your loan agreement. If you have any questions regarding the issue, please, address them to your lender. For more information visit our page for Responsible Lending. techyreserve.com itself isn’t involved in debt collection.`
+  },
+  {
+    title: `Loan Renewal Policies`,
+    content: `Loan renewal options are not always available. It is therefore advisable to clarify whether the option is available with your lender. Be sure to carefully peruse the renewal policy presented in the agreement before you sign the documents.`
   },
 ];
 const FAQ = (props: Props) => {
   return (
     <div>
-      <Column gap={24} className="my-container !py-24">
-        <div className="text-center font-medium text-xl text-main">FAQ</div>
-        <div className=" text-xl lg:text-5xl font-medium text-center max-w-[700px] mx-auto">
+      <Column className="my-container lg:!py-24 gap-6 lg:gap-24">
+        <div className="text-center font-semibold text-xl text-main">FAQ</div>
+        <div className=" text-3xl lg:text-5xl font-medium text-center max-w-[700px] mx-auto">
           Have A Question? We Have The Answer!{" "}
         </div>
 
         <Column className=" gap-6">
           {data.map((item, key) => (
             <div key={key}>
-              <AccordionItem data={item} />
+              <AccordionItem data={item} defaultOpen={key < 3 ? true : false} />
             </div>
           ))}
         </Column>

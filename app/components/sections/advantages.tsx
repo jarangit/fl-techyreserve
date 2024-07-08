@@ -11,13 +11,13 @@ const Advantages = (props: Props) => {
   return (
     <div className="py-24">
       <div className="my-container">
-        <Column className="gap-16">
-          <div className="text-center font-medium text-2xl text-main">ADVANTAGES</div>
-          <div className=" text-xl lg:text-5xl font-medium text-center">Have No Time To Waste? Choose Us!</div>
+        <Column className="gap-6 lg:gap-16">
+          <div className="text-center font-semibold lg:text-2xl text-main">ADVANTAGES</div>
+          <div className=" text-3xl lg:text-5xl font-medium text-center">Have No Time To Waste? Choose Us!</div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-24">
-            <Column gap={12} className="justify-center items-center">
+            <Column className="lg:gap-12 gap-3 justify-center items-center">
               <div>
-                <TbNotes className="text-7xl text-main" />
+                <TbNotes className="text-4xl lg:text-7xl text-main" />
               </div>
               <div className="font-medium text-2xl">Simple</div>
               <div className="text-gray-400">
@@ -26,9 +26,9 @@ const Advantages = (props: Props) => {
                 computer, tablet, or mobile phone.`}
               </div>
             </Column>
-            <Column gap={12} className="justify-center items-center">
+            <Column className="gap-3 lg:gap-12justify-center items-center">
               <div>
-                <FaSackDollar className="text-7xl text-main" />
+                <FaSackDollar className="text-4xl lg:text-7xl text-main" />
               </div>
               <div className="font-medium text-2xl">Affordable</div>
               <div className="text-gray-400">{`
@@ -36,9 +36,9 @@ const Advantages = (props: Props) => {
       We focus on helping you and providing you with loan offers! So don’t let your credit determine your future and stop you from submitting a request with us!
     `}</div>
             </Column>
-            <Column gap={12} className="justify-center items-center">
+            <Column className="gap-3 lg:gap-12justify-center items-center">
               <div>
-                <AiFillThunderbolt className="text-7xl text-main" />
+                <AiFillThunderbolt className="text-4xl lg:text-7xl text-main" />
               </div>
               <div className="font-medium text-2xl">Fast</div>
               <div className="text-gray-400">
@@ -48,9 +48,9 @@ const Advantages = (props: Props) => {
     `}
               </div>
             </Column>
-            <Column gap={12} className="justify-center items-center">
+            <Column className="gap-3 lg:gap-12justify-center items-center">
               <div>
-                <GrSecure className="text-7xl text-main" />
+                <GrSecure className="text-4xl lg:text-7xl text-main" />
               </div>
               <div className="font-medium text-2xl">Secure</div>
               <div className="text-gray-400">{`

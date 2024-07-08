@@ -16,20 +16,20 @@ const Footer = (props: Props) => {
         <div className="grid grid-cols-1 md:grid-cols-4 !py-12  border-gray gap-6">
           <Column gap={3}>
             <div className="font-bold">Home</div>
-            <div>Privacy Policy</div>
+            {/* <div>Privacy Policy</div>
             <div>Terms of Use</div>
-            <div>Credit Authorization</div>
+            <div>Credit Authorization</div> */}
           </Column>
           <Column gap={3}>
             <div className="font-bold">Contact</div>
-            <div>Rates and Fees</div>
+            {/* <div>Rates and Fees</div>
             <div>Unsubscribe</div>
-            <div>Do Not Sell My Personal Information</div>
+            <div>Do Not Sell My Personal Information</div> */}
           </Column>
           <Column gap={3}>
             <div className="font-bold">Marketing Practices</div>
-            <div>Responsible Lending</div>
-            <div>Lending Goals</div>
+            {/* <div>Responsible Lending</div>
+            <div>Lending Goals</div> */}
           </Column>
           <Column gap={3}>
             <div className="font-bold">Email:</div>

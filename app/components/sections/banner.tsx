@@ -17,14 +17,23 @@ const list = [
 const Banner = (props: Props) => {
   return (
     <div className='bg-secondary'>
-      <div className='my-container grid grid-cols-1 md:grid-cols-2 !py-10 relative'>
+      <div className='my-container grid grid-cols-1 md:grid-cols-2 !pt-6  lg:!py-10 relative gap-6'>
         <Column gap={6}>
-          <div className=' text-xl lg:text-5xl font-medium'>Get Your Personal Loan Up To $5000</div>
+          <div className=' text-3xl lg:text-5xl font-medium text-center'>Get Your Personal Loan Up To $5000</div>
           <div className='border rounded-3xl shadow-lg overflow-hidden bg-white p-6'>
             <div id={'_lg_form_'}></div>
           </div>
         </Column>
         <div className='hidden lg:block absolute w-[600px] h-[600px] bottom-0 right-0'>
+          <Image
+            src={'/images/image1.png'}
+            alt=''
+            fill
+            style={{ objectFit: "cover" }}
+          />
+        </div>
+
+        <div className='relative h-[300px]'>
           <Image
             src={'/images/image1.png'}
             alt=''

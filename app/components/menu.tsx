@@ -39,7 +39,7 @@ const Menus = (props: Props) => {
       >
         <Row>
           <BsFillCreditCard2FrontFill className=" text-xl lg:text-5xl text-main" />
-          <div className="text-2xl">{websiteConfig.title1}</div>
+          <div className="font-semibold text-lg">{websiteConfig.title1}</div>
         </Row>
         <Row gap={3} className="gap-8 hidden md:flex">
           {menus.map((item, key) => (
@@ -56,7 +56,7 @@ const Menus = (props: Props) => {
           <a href="/form-loan">
             <button
               onClick={() => push("/form-loan")}
-              className="bg-main text-white p-2 px-4 rounded-md font-medium hidden lg:block"
+              className="bg-main text-white p-2 px-4 rounded-md font-medium "
             >
               Get Started
             </button>
