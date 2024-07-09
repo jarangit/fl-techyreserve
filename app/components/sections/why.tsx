@@ -23,7 +23,7 @@ const list = [
 const Why = (props: Props) => {
   return (
     <div className="bg-secondary my-12">
-      <div className="my-container grid grid-cols-1 md:grid-cols-2  items-center !py-12">
+      <div className="my-container grid grid-cols-1 md:grid-cols-2  items-center !py-12 gap-3">
         {/* g1 */}
         <Column gap={12} className="">
           <div className="text-main font-medium text-lg">WHY US</div>
@@ -45,12 +45,12 @@ const Why = (props: Props) => {
 
         {/* g2 */}
         <div>
-          <div className="relative w-full h-[500px] overflow-hidden rounded-2xl ">
+          <div className="relative w-full h-[500px] overflow-hidden rounded-2xl">
             <Image
               src={"/images/image2.png"}
               alt=""
               fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "contain" }}
             />
           </div>
         </div>
